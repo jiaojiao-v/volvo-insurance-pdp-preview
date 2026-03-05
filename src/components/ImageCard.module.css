@@ -1,0 +1,46 @@
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
+.imagePlaceholder {
+  width: 90px;
+  aspect-ratio: 4 / 3;
+  background-color: #003057;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.placeholderBrand {
+  color: #ffffff;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.cardContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.cardTitle {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+.cardDescription {
+  font-size: 11px;
+  color: #6b7280;
+  line-height: 1.4;
+}
