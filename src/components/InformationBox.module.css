@@ -1,0 +1,22 @@
+.box {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  background-color: #f4f4f4;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 12px;
+}
+
+.icon {
+  font-size: 14px;
+  flex-shrink: 0;
+  color: #6b7280;
+  margin-top: 1px;
+}
+
+.message {
+  font-size: 11px;
+  line-height: 1.5;
+}

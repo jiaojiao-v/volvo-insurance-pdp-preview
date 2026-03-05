@@ -4,27 +4,34 @@
   flex-direction: column;
 }
 
-.toolbar {
-  background-color: var(--volvo-white);
-  border-bottom: 1px solid var(--volvo-border);
-  padding: 16px 24px;
-}
-
-.toolbarInner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.toolbarHint {
-  font-size: 0.82rem;
-  color: var(--volvo-muted);
-  font-style: italic;
-}
-
 .main {
   flex: 1;
+}
+
+.splitLayout {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  height: calc(100vh - 64px);
+  overflow: hidden;
+}
+
+.previewPane {
+  background-color: #e8e8e8;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 24px;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .splitLayout {
+    grid-template-columns: 1fr;
+    height: auto;
+    overflow: visible;
+  }
+
+  .previewPane {
+    padding: 24px 16px;
+  }
 }
