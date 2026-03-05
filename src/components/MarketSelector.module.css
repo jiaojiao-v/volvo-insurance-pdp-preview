@@ -1,0 +1,47 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--volvo-muted);
+}
+
+.selectWrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.select {
+  appearance: none;
+  background-color: var(--volvo-white);
+  border: 1.5px solid var(--volvo-border);
+  border-radius: var(--radius);
+  padding: 10px 40px 10px 14px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: var(--volvo-text);
+  cursor: pointer;
+  min-width: 260px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.select:focus {
+  outline: none;
+  border-color: var(--volvo-accent);
+  box-shadow: 0 0 0 3px rgba(0, 113, 197, 0.15);
+}
+
+.chevron {
+  position: absolute;
+  right: 14px;
+  pointer-events: none;
+  color: var(--volvo-muted);
+  font-size: 0.85rem;
+}

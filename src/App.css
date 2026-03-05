@@ -1,0 +1,30 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbar {
+  background-color: var(--volvo-white);
+  border-bottom: 1px solid var(--volvo-border);
+  padding: 16px 24px;
+}
+
+.toolbarInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.toolbarHint {
+  font-size: 0.82rem;
+  color: var(--volvo-muted);
+  font-style: italic;
+}
+
+.main {
+  flex: 1;
+}

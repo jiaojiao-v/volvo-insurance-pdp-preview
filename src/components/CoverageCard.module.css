@@ -1,0 +1,148 @@
+.card {
+  position: relative;
+  background-color: var(--volvo-white);
+  border: 1.5px solid var(--volvo-border);
+  border-radius: var(--radius);
+  padding: 24px;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.1s;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  outline: none;
+}
+
+.card:hover {
+  border-color: var(--volvo-light-blue);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.card:focus-visible {
+  border-color: var(--volvo-accent);
+  box-shadow: 0 0 0 3px rgba(0, 113, 197, 0.2);
+}
+
+.selected {
+  border-color: var(--volvo-accent) !important;
+  box-shadow: 0 0 0 3px rgba(0, 113, 197, 0.15), var(--shadow-md) !important;
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  background-color: var(--volvo-blue);
+  color: var(--volvo-white);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.planName {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--volvo-blue);
+  margin-top: 4px;
+}
+
+.description {
+  font-size: 0.88rem;
+  color: var(--volvo-muted);
+  line-height: 1.5;
+}
+
+.pricing {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.price {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--volvo-text);
+}
+
+.period {
+  font-size: 0.9rem;
+  color: var(--volvo-muted);
+}
+
+.annual {
+  font-size: 0.8rem;
+  color: var(--volvo-muted);
+  margin-top: -8px;
+}
+
+.coverages {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 4px;
+  flex: 1;
+}
+
+.coverageItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+}
+
+.included {
+  color: var(--volvo-text);
+}
+
+.excluded {
+  color: var(--volvo-border);
+}
+
+.icon {
+  font-size: 0.75rem;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-weight: 700;
+}
+
+.included .icon {
+  background-color: #dcfce7;
+  color: var(--volvo-success);
+}
+
+.excluded .icon {
+  background-color: #f3f4f6;
+  color: #9ca3af;
+}
+
+.ctaButton {
+  margin-top: auto;
+  padding: 12px 0;
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  width: 100%;
+  transition: background-color 0.15s, color 0.15s;
+  border: 2px solid var(--volvo-accent);
+  background-color: transparent;
+  color: var(--volvo-accent);
+}
+
+.ctaButton:hover {
+  background-color: var(--volvo-accent);
+  color: var(--volvo-white);
+}
+
+.ctaSelected {
+  background-color: var(--volvo-accent);
+  color: var(--volvo-white);
+}
