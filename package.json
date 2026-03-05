@@ -1,0 +1,22 @@
+{
+  "name": "volvo-insurance-pdp-preview",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A quick prototype to help stakeholders visualise how market specific insurance content is shown in app",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^5.1.4",
+    "vite": "^7.3.1"
+  }
+}
